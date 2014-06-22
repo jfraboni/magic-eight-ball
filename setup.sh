@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-if [ hostname == "runnable" ]
+if [[ `hostname -s` = "runnable" ]]
 then
   echo "doing set up for runnable..."
 
