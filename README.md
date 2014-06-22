@@ -31,7 +31,7 @@ Great, you're set to roll!
 Open up the magic-eight-ball.js file, and find:
 
 **TODO 1 :** Here, create to variables in the same statement, one named prompt which will hold the prompt module, and one named fs to hold the file-system module:
-```node
+```javascript
 #!/usr/bin/env node
 
 // TODO 1 : create variables for prompt and fs by calling require in each respective module:
@@ -44,4 +44,24 @@ Prompt and fs are modules, that is, libraries of code that provide some special 
 
 To use modules, we state they are required by calling the node require method, like so, `var myModuleInstance = require('my-module')`, which takes a string representing the module and returns the instance of the module.
 
-Notice the formatting of these variable declarations: var is on a line by itself, then on the next line and indented, we have the prompt 
+Notice the formatting of these variable declarations: var is on a line by itself, then on the next line and indented, we have the prompt, then a comma, new line, indented, then the fs declaration, and finally a semi-colon on the last line by itself.  This formatting simply points out that we're listing declarations in the same statement, and is a cleaner way of looking at the source.
+
+**TODO 2 :** Next, we'll create a variable to hold a welcome message and log it, this will print the welcome message back to the command line:
+```javascript
+// other code...
+
+// TODO 2 : create a welcomeMessage variable and log the welcomeMessage:
+var welcomeMessage = "Magic Eight Ball";
+console.log(welcomeMessage);
+
+// other code...
+```
+Nothing we haven't seen before!
+
+**TODO 3 :** Now let's set up a few more varialbes:  First an array to hold our possible answers, and then we'll assemble the full file path to the answers.json data that we're about to load:
+
+```javascript
+// TODO 3 : create two variables, the answers array and the file path to the answers.json:
+var answers = [];
+var file = __dirname + '/answers.json';
+```
