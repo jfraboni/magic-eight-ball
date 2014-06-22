@@ -58,10 +58,39 @@ console.log(welcomeMessage);
 ```
 Nothing we haven't seen before!
 
-**TODO 3 :** Now let's set up a few more varialbes:  First an array to hold our possible answers, and then we'll assemble the full file path to the answers.json data that we're about to load:
+**TODO 3 :** Now let's set up a few more varialbes:  First an array to hold our possible answers, and then we'll assemble the full file path to the answers.json data that we're about to load.  __dirname is a built in node feature that gives us the system-specific path to our current directory, which will be different depending on the machine and operating system, etc, in otherwords, we certainly wouldn't want to hardcode a full path:
 
 ```javascript
 // TODO 3 : create two variables, the answers array and the file path to the answers.json:
 var answers = [];
 var file = __dirname + '/answers.json';
+```
+
+**TODO 4 :** Check out this deal: We use a for-in loop to iterate over all the items in the data.answers array (see the structure of that json data in the answers.json data in the same directory).
+
+The for-in loop cycles through all elements in a list (either array or object), and pulls out and to the variable just inside the open-parentheses (in this case, we called that variable "index"), it assigns the index (in the case of iterating an array) or the key (in the case of iterating an object).  Loops are the mechanism by which you'll process and consume arrays (lists of things) and other datasets, so it's best to familiarize yourself with them.  Here's a list of all the loops in JavaScript: http://www.w3schools.com/js/js_loop_for.asp
+
+```javascript
+// TODO 4 : Loop through the data.answers objects, and push answer-records into the answers array:
+for (index in data.answers) {
+    answers.push(data.answers[index].value);
+}
+```
+
+Let's talk about this crazy method call:
+
+```javascript
+fs.readFile(file, 'utf8', function (err, data) {
+  if (err) { return onErr(err); }
+
+  data = JSON.parse(data);
+
+  // TODO 4 : Loop through the data.answers objects, and push answer-records into the answers array:
+  for (index in data.answers) {
+      answers.push(data.answers[index].value);
+  }
+
+  // TODO 5 : Invoke the promptForQuestion() function:
+  
+});
 ```
