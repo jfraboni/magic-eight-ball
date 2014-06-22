@@ -31,7 +31,7 @@ Great, you're set to roll!
 Open up the magic-eight-ball.js file, and find:
 
 **TODO 1 :** Here, create to variables in the same statement, one named prompt which will hold the prompt module, and one named fs to hold the file-system module:
-```javascript
+```node
 #!/usr/bin/env node
 
 // TODO 1 : create variables for prompt and fs by calling require in each respective module:
