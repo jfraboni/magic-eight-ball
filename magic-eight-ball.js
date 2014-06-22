@@ -9,7 +9,6 @@
 // TODO 3 : create two variables, the answers array and the file path to the answers.json:
 
 
-
 fs.readFile(file, 'utf8', function (err, data) {
   if (err) { return onErr(err); }
 
