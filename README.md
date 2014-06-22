@@ -94,3 +94,37 @@ fs.readFile(file, 'utf8', function (err, data) {
   
 });
 ```
+
+**TODO 5 :** Moving on, now that we've loaded our data, we're ready to rip, so let's prompt the user to ask our magic eight ball a question: invoke the promptForQuestion() method, like so:
+
+```javascript
+// other code...
+
+// TODO 5 : Invoke the promptForQuestion() function:
+promptForQuestion();
+
+// other code...
+```
+
+Let's go over the prompt boilerplate, which we wrote for you: 
+
+**TODO 6 :** Okay, now let's get the magic eight ball ready to respond: create a function called showResponse() that takes one parameter, called index.  We log a result by looking up the index, which will be randomly selected, on the answers array:
+
+```javascript
+// TODO 6 : Create the showResponse() function:
+function showResponse(index) {
+  console.log('The Magic Eight Ball responds: ' + answers[index]);
+}
+```
+
+** TODO 7 :** Finally, the moment we've all been waiting for, let's randomly select the magic eight ball's response:
+
+```javascript
+// TODO 7 : Invoke the showResponse() function, passing in a random index from the answers array:
+showResponse(randomNumberBetween(0, answers.length-1));
+```
+
+Here, we're invoking the showResponse() method, and before we do so, as an argument to the showResponse() method, we're passing in the result of another invokation, this one to the randomNumberBetween() method, where we ask for a random number between zero (remember, arrays are zero-indexed, so the first element in the answers array is at index 0) and the last possible index in the answers array, which we calculate by asking for the length of the array, minus one.  Why minus one here?  To offset for the fact, as previously mentioned, that arrays are zero indexed, so if we just took the length of the array as the high end of our range, we'd be out of bounds by one.
+
+Go ahead and run the app, but be very careful what you ask for!
+
