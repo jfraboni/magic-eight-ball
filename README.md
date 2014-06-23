@@ -7,7 +7,7 @@ and node features.
 # Installation:
 
 ### On runnable.com:
-Create a new node app, and from the terminal, enter or cut and past the following commands:
+Create a new node app, and from the terminal, enter or cut and paste the following commands:
 
     git clone https://github.com/jfraboni/node-magic-eight-ball-lesson.git
 
@@ -16,7 +16,7 @@ Create a new node app, and from the terminal, enter or cut and past the followin
     cd node-magic-eight-ball-lesson && ./setup.sh && cd -
 
 ###On your local computer:
-Open a terminal in the directory into which you want to clone the repository, then enter or cut and pate the following command:
+Open a terminal in the directory into which you want to clone the repository, then enter or cut and paste the following command:
 
     git clone https://github.com/jfraboni/node-magic-eight-ball-lesson.git  
 
@@ -40,7 +40,7 @@ var
     fs = require('fs')
     ;
 ```
-Prompt and fs are modules, that is, libraries of code that provide some special functionality that we can reuse.  Think of including modules like assemblying the parts of a car, we need some headlights, an engine, a battery, wheels, etc, but someone else has constructed them for us, and in this case, prompt allows us to prompt the user for input, and fs, which means "file system", allows us to read and write to files on the computer.  Each module exposes a public API that provides some functionality, like prompting the user - we don't have to know how the prompt module works on the inside, just like we don't have to know how a battery works on the inside to hook it up to a car and make use of it.
+Prompt and fs are modules, that is, libraries of code that provide some special functionality that we can reuse.  Think of including modules like assembling the parts of a car, we need some headlights, an engine, a battery, wheels, etc, but someone else has constructed them for us, and in this case, prompt allows us to prompt the user for input, and fs, which means "file system", allows us to read and write to files on the computer.  Each module exposes a public API that provides some functionality, like prompting the user - we don't have to know how the prompt module works on the inside, just like we don't have to know how a battery works on the inside to hook it up to a car and make use of it.
 
 To use modules, we state they are required by calling the node require method, like so, `var myModuleInstance = require('my-module')`, which takes a string representing the module and returns the instance of the module.
 
@@ -58,7 +58,7 @@ console.log(welcomeMessage);
 ```
 Nothing we haven't seen before!
 
-**TODO 3 :** Now let's set up a few more varialbes:  First an array to hold our possible answers, and then we'll assemble the full file path to the answers.json data that we're about to load.  __dirname is a built in node feature that gives us the system-specific path to our current directory, which will be different depending on the machine and operating system, etc, in otherwords, we certainly wouldn't want to hardcode a full path:
+**TODO 3 :** Now let's set up a few more variables:  First an array to hold our possible answers, and then we'll assemble the full file path to the answers.json data that we're about to load.  __dirname is a built in node feature that gives us the system-specific path to our current directory, which will be different depending on the machine and operating system, etc, in other words, we certainly wouldn't want to hardcode a full path:
 
 ```javascript
 // TODO 3 : create two variables, the answers array and the file path to the answers.json:
@@ -97,7 +97,7 @@ fs.readFile(file, 'utf8', function (err, data) {
 });
 ```
 
-Here, we're using the readFile API of the fs (file-system) module to load our answers.json file.  Again, we don't need to know too much about what's going on inside, we just need to meet certain requirments, or a contract, which are outlined by an **interface**.  In this case, the readFile method takes the directory path to the file, which includes the file name.  Next, we set a standard utf8 encoding, but don't worry about this for now.  Most interestingly is the next argument, which is an anonymous function.  This is a pretty powerful pattern that you'll see often in JavaScript and node, were **we pass a function that will be executed once some other process has completed**, in this case, the file has been read.
+Here, we're using the readFile API of the fs (file-system) module to load our answers.json file.  Again, we don't need to know too much about what's going on inside, we just need to meet certain requirements, or a contract, which are outlined by an **interface**.  In this case, the readFile method takes the directory path to the file, which includes the file name.  Next, we set a standard utf8 encoding, but don't worry about this for now.  Most interestingly is the next argument, which is an anonymous function.  This is a pretty powerful pattern that you'll see often in JavaScript and node, were **we pass a function that will be executed once some other process has completed**, in this case, the file has been read.
 
 On load complete, our anonymous function is executed, wherein we use the JSON.parse API to read our JSON string and convert the string to a JavaScript object structure.  Once parsed, we look inside that object for an array of answers, and for this version of the app, we don't care about other any other values in that data except for the value of the answer, so we grab each answer and push it into a simple array. 
 
@@ -133,4 +133,3 @@ showResponse(randomNumberBetween(0, answers.length-1));
 Here, we're invoking the showResponse() method, and before we do so, as an argument to the showResponse() method, we're passing in the result of another invocation, this one to the randomNumberBetween() method, where we ask for a random number between zero (remember, arrays are zero-indexed, so the first element in the answers array is at index 0) and the last possible index in the answers array, which we calculate by asking for the length of the array, minus one.  Why minus one here?  To offset for the fact, as previously mentioned, that arrays are zero indexed, so if we just took the length of the array as the high end of our range, we'd be out of bounds by one.
 
 Go ahead and run the app, but be very careful what you ask for!
-
