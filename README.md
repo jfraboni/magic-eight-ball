@@ -4,6 +4,11 @@ A simple, but magical node cli app demonstrating handling JSON, prompting
 the user for input, simple regular expressions and other basic JavaScript 
 and node features.
 
+- [Magic Eight Ball](#user-content-magic-eight-ball)
+- [Installation](#user-content-installation)
+    - [On runnable.com:](#user-content-on-runnablecom)
+- [Lesson Steps](#user-content-lesson-steps)
+
 # Installation
 
 ### On runnable.com:
