@@ -63,7 +63,7 @@ var file = __dirname + "/answers.json";
 
 **TODO 4 :** Check out this deal: We use a for-in loop to iterate over all the items in the data.answers array (see the structure of that <a href="http://www.json.org/js.html" target="_blank">JSON</a> data in the answers.json data in the same directory).
 
-The for-in loop cycles through all elements in a list (either Array or object), and assigns to the variable just inside the open-parentheses (in this case, we called that variable `index`), the index (in the case of iterating an array) or the key (in the case of iterating an object), which we can then use to look up the value.  Loops are the mechanism by which you'll process and consume Arrays (lists of things) and other data-sets, so it's best to familiarize yourself with them.
+The for-in loop cycles through all elements in a list (either Array or object), and assigns to the variable just inside the open-parentheses (in this case, we called that variable `index`), the index (in the case of iterating an Array) or the key (in the case of iterating an Object), which we can then use to look up the value at that index or key.  Loops are the mechanism by which you'll process and consume Arrays (lists of things) and other data-sets, so it's best to familiarize yourself with them.
 
 <a href="http://www.w3schools.com/js/js_loop_for.asp" target="_blank">Here's a list of all the loops in JavaScript</a>
 
