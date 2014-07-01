@@ -26,8 +26,8 @@ Open up the magic-eight-ball.js file, and find:
 
 // TODO 1 : create variables for prompt and fs by calling require in each respective module:
 var 
-    prompt = require('prompt'),
-    fs = require('fs')
+    prompt = require("prompt"),
+    fs = require("fs")
     ;
 ```
 
@@ -58,7 +58,7 @@ Nothing we haven't seen before!
 ```javascript
 // TODO 3 : create two variables, the answers array and the file path to the answers.json:
 var answers = [];
-var file = __dirname + '/answers.json';
+var file = __dirname + "/answers.json";
 ```
 
 **TODO 4 :** Check out this deal: We use a for-in loop to iterate over all the items in the data.answers array (see the structure of that <a href="http://www.json.org/js.html" target="_blank">JSON</a> data in the answers.json data in the same directory).
@@ -77,7 +77,7 @@ for (index in data.answers) {
 Let's take a minute to talk about this crazy method call:
 
 ```javascript
-fs.readFile(file, 'utf8', function (err, data) {
+fs.readFile(file, "utf8", function (err, data) {
   if (err) { return onErr(err); }
 
   data = JSON.parse(data);
@@ -114,11 +114,11 @@ We create a variable called `properties`, which contains some configuration valu
 ```javascript
 var properties = [
   {
-    name: 'input', 
+    name: "input", 
     validator: /^[A-Z].+(\?)$/,
-    message: '\nAsk the magic eight ball a question>',
+    message: "\nAsk the magic eight ball a question>",
     required: true,
-    warning: 'Whoa now, that doesn\'t seem like a proper question:\nWe must be polite to the magic eight ball,\nso please make certain you start your question with a capital and end it with a question mark.\nFor example, \"Will I win the lottery?\". Try again.'
+    warning: "Whoa now, that doesn\'t seem like a proper question:\nWe must be polite to the magic eight ball,\nso please make certain you start your question with a capital and end it with a question mark.\nFor example, \"Will I win the lottery?\". Try again."
   }
 ];
 
@@ -139,7 +139,7 @@ function promptForQuestion() {
 ```javascript
 // TODO 6 : Create the showResponse() function:
 function showResponse(index) {
-  console.log('The Magic Eight Ball responds: ' + answers[index]);
+  console.log("The Magic Eight Ball responds: " + answers[index]);
 }
 ```
 
