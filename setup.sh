@@ -35,7 +35,7 @@ then
   rm replace-anchor.js
 
   #(shopt -s dotglob; mv "${config[0]}/*" .)
-  mv "${config[0]}/*" .
+  mv spark/* .
   echo "Files relocated to root, installing node packages..."
   cd ../ && npm install
   
