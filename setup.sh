@@ -11,7 +11,7 @@ getConfig() {
     done < $1
 }
 
-getConfig "${config[0]}/.setup/config.txt"
+getConfig "spark/.setup/config.txt"
 
 echo "executing set up for app ${config[0]}..."
 
