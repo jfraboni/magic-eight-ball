@@ -31,13 +31,10 @@ then
 	  rm ../server.js
   fi
 
-  # remove the current bash profile, we'll install our own
-  rm ../.bashrc
-
   ./replace-anchor.js
   rm replace-anchor.js
 
-  (shopt -s dotglob; mv -- * ..)
+  (shopt -s dotglob; mv ${config[0]}/* .)
 
   echo "Files relocated to root, installing node packages..."
   cd ../ && npm install

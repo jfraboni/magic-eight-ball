@@ -14,7 +14,7 @@ and node features.
 ### On runnable.com:
 Create a new node app, and from the terminal, enter or cut and paste the following commands, then press enter or return:
     
-    git clone https://github.com/jfraboni/magic-eight-ball.git && cd magic-eight-ball && ./setup.sh && cd - && source .bashrc
+    git clone https://github.com/jfraboni/magic-eight-ball.git && cd magic-eight-ball && ./setup.sh && cd -
     
 ...some text will fly by as the repository is cloned locally and the project is setup.
 
