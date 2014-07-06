@@ -171,7 +171,7 @@ promptForQuestion();
 
 Let's go over the prompt boilerplate, which we wrote for you:
 
-We create a variable called `properties`, which contains some configuration values for the prompt, including the message we will display to the user on the screen.  Next, we declared a function called `promptForQuestion`; we do this so we can reuse this functionality and show the prompt again without having to rewrite all the code required to do so.  Inside the `promptForQuestion` function, we call `start` on the `prompt` Object - this initializes the prompt, and then we call `prompt.get` and pass our properties and a callback function, that will handle our user's response.
+We create a variable called `properties`, which contains some configuration values for the prompt, including the message we will display to the user on the screen.  Next, we declared a function called `promptForQuestion`; we do this so we can reuse this functionality and show the prompt again without having to rewrite all the code required to do so.  Inside the `promptForQuestion` function, we call `start` on the `prompt` Object - this initializes the prompt, and then we call `prompt.get` and pass our properties and a callback function that will handle our user's response.
 
 ```javascript
 var properties = [
