@@ -252,7 +252,7 @@ Here, we're invoking the showResponse() method, and before we do so, as an argum
 
 Go ahead and run the app, but be very careful what you ask for!
   
-** Run the App!**
+**Run the App!**
 
     # ./magic-eight-ball.js
     Magic Eight Ball
