@@ -212,7 +212,7 @@ Notice, when asking the magic eight ball a question, if you do not capitalize th
     # ./magic-eight-ball.js
     Magic Eight Ball
     prompt:
-    Ask the magic eight ball a question>:  will get a job at Google
+    Ask the magic eight ball a question>:  will I get a job at Google
     error:   Invalid input for
     Ask the magic eight ball a question>
     error:   Whoa now, that doesn't seem like a proper question:
@@ -220,7 +220,7 @@ Notice, when asking the magic eight ball a question, if you do not capitalize th
     so please make certain you start your question with a capital and end it with a question mark.
     For example, "Will I win the lottery?". Try again.
     prompt:
-    Ask the magic eight ball a question>:  Will get a job at Google?
+    Ask the magic eight ball a question>:  Will I get a job at Google?
 
 This is a process known as <a href="http://en.wikipedia.org/wiki/Data_validation" target="_blank">_input validation_</a>, and you'll see this pattern often in software projects.  In our app, we use a <a href="http://en.wikipedia.org/wiki/Regular_expression" target="_blank">regular expression</a>, which we create as the `validator` in the `properties` object, and pass to the `prompt.get()` method.  A regular expression is a character sequence describing a search pattern used to find matches in strings.  We'll learn more about them in a later lesson, but here's what ours looks like:
 
@@ -228,7 +228,7 @@ This is a process known as <a href="http://en.wikipedia.org/wiki/Data_validation
 validator: /^[A-Z].+(\?)$/,
 ```
 
-Our validator regular expression checks the input from our user, and makes sure the input is a valid question and properly formatted sentence that begins with an uppercase word.  So, above, that's why the first question to the magic eight ball, `will get a job at Google`, fails our validation rules, and why the second question to the magic eight ball, `Will get a job at Google?` passes our validation rules.
+Our validator regular expression checks the input from our user, and makes sure the input is a valid question and properly formatted sentence that begins with an uppercase word.  So, above, that's why the first question to the magic eight ball, `will I get a job at Google`, fails our validation rules, and why the second question to the magic eight ball, `Will I get a job at Google?` passes our validation rules.
 
 Alrighty...
 
