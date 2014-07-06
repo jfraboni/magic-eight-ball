@@ -232,7 +232,7 @@ Our validator regular expression checks the input from our user, and makes sure 
 
 Alrighty...
 
-**TODO 6 :** Okay, now let's get the magic eight ball ready to respond: create a function called `showResponse()` that takes one parameter, called `index`.  We log a result by looking up the index, which will be randomly selected from the answers array:
+**TODO 6 :** Okay, now let's get the magic eight ball ready to respond: create a function called `showResponse()` that takes one parameter, called `index`.  We log a result by randomly selecting an index within the range of the answers array:
 
 ```javascript
 // TODO 6 : Create the showResponse() function:
