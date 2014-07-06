@@ -8,10 +8,9 @@ and node features.
 - [Help Us Improve](#user-content-help-us-improve)
 - [Installation](#user-content-installation)
     - [On runnable.com:](#user-content-on-runnablecom)
-- [Lesson Steps](#user-content-lesson-steps)
-    - [Feedback](#user-content-feedback)
-    - [Help Us Improve](#user-content-help-us-improve-1)
-    - [Other Resources](#user-content-other-resources)
+- [Lesson Steps](#user-content-lesson-steps)    
+- [Help Us Improve](#user-content-help-us-improve-1)
+- [Other Resources](#user-content-other-resources)
 
 # Help Us Improve
 
@@ -264,9 +263,7 @@ Go ahead and run the app, but be very careful what you ask for!
     Ask the magic eight ball a question>:  Will I fill out the feedback form, below?
     The Magic Eight Ball responds: Mos def
 
-###Feedback
-
-### Help Us Improve
+# Help Us Improve
 
 Please help us improve our efforts to help you learn by taking a few moments to give us feedback:
 
@@ -274,7 +271,7 @@ Please help us improve our efforts to help you learn by taking a few moments to 
 
 Thanks, you've helped us considerably!
 
-### Other Resources
+# Other Resources
 
 Continue your learning by visiting <a href="https://github.com/jfraboni/simple-node-app/wiki/Home" target="_blank">our JavaScript wiki</a>
 
