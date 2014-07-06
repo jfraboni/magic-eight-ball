@@ -87,7 +87,7 @@ Whoa no!  An error...
         at startup (node.js:119:16)
         at node.js:906:3
 
-Errors happen all the time, it's part of the process writing software, of hacking away until you get it right.  An error happens when an unexpected condition occurs, which essentially means, when the rules are broken.  When an error occurs, _if_ we don't a href="http://en.wikipedia.org/wiki/Exception_handling" target="_blank">handle it</a>, the program will crash!
+Errors happen all the time, it's part of the process writing software, of hacking away until you get it right.  An error happens when an unexpected condition occurs, which essentially means, when the rules are broken.  When an error occurs, _if_ we don't <a href="http://en.wikipedia.org/wiki/Exception_handling" target="_blank">handle it</a>, the program will crash!
 
 Often, when an error occurs, the program will print to the screen what's called a stack trace, listing the path of execution through the program, up until the occurrence of the error.  You'll get to understand what all this stack trace gibberish means in no time, and determine just exactly where the problem is and how to implement a solution.
 
