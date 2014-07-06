@@ -10,11 +10,9 @@ getConfig() {
         i=$(($i + 1))
     done < $1
 }
-
 getConfig "spark/.setup/config.txt"
 
 echo "executing set up for app ${config[0]}..."
-
 
 if [[ `hostname -s` = "runnable" ]]
 then
@@ -42,7 +40,7 @@ then
   
   rm setup.sh
 else
-  npm install
+  cd spark && npm install
   rm setup.sh
 fi
 
