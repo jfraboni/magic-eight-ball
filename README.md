@@ -5,9 +5,13 @@ the user for input, simple regular expressions and other basic JavaScript
 and node features.
 
 - [Magic Eight Ball](#user-content-magic-eight-ball)
+- [Help Us Improve](#user-content-help-us-improve)
 - [Installation](#user-content-installation)
     - [On runnable.com:](#user-content-on-runnablecom)
 - [Lesson Steps](#user-content-lesson-steps)
+    - [Feedback](#user-content-feedback)
+    - [Help Us Improve](#user-content-help-us-improve-1)
+    - [Other Resources](#user-content-other-resources)
 
 # Help Us Improve
 
