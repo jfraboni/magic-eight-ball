@@ -118,7 +118,7 @@ var file = __dirname + "/answers.json";
 
 **Run the App!**
 
-    $ ./magic-eight-ball.js
+    # ./magic-eight-ball.js
     Magic Eight Ball
 
 Awesome, all systems green, we quashed the bug!  But not much going on in our app yet...
