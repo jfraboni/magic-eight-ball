@@ -43,4 +43,3 @@ else
   cd spark && npm install
   rm setup.sh
 fi
-
